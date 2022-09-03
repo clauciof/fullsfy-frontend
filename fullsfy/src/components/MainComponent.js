@@ -31,23 +31,37 @@ class MainComponent extends Component {
               </Navbar.Collapse>
           </Container>
         </Navbar>
+        
         {this.state.pagina === 'Home' &&
-          <div>
+          <div class="container border border-warning" style={{'margin-top': '10%'}}>
+            <div class="text-center">
+              <h1>{this.state.pagina}</h1>
+              <p class="lead">blalblablalbal</p>
+            </div>
             <HomeComponent name={this.state.pagina}></HomeComponent>
           </div>
         }
 
         {this.state.pagina === 'Track' &&
-          <div>
+          <div class="container border border-warning" style={{'margin-top': '10%'}}>
+            <div class="text-center">
+              <h1>{this.state.pagina}</h1>
+              <p class="lead">Copie o link da musica no campo</p>
+            </div>
             <TracksComponent name={this.state.pagina}></TracksComponent>
           </div>
         }
 
         {this.state.pagina === 'Album' &&
-          <div>
+          <div class="container border border-warning" style={{'margin-top': '10%'}}>
+             <div class="text-center">
+              <h1>{this.state.pagina}</h1>
+              <p class="lead">Copie o link do album no campo</p>
+            </div>
             <AlbumComponent name={this.state.pagina}></AlbumComponent>                   
           </div>
         }
+        
         </>
       );
     }

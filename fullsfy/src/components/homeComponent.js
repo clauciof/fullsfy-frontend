@@ -21,22 +21,19 @@ class HomeComponent extends Component {
 	
     render(){
         return (
-            <><h1>Olá, {this.props.name}</h1><Card style={{ margin: '5px' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body class="d-flex justify-content-between">
-                    <div>
-                        <Card.Title>{this.props.name}</Card.Title>
-                        <Card.Text>
-                            Some quick example text to build on the card title and make up the bulk of
-                            the card's content.
-                        </Card.Text>
-                    </div>
+            <>
+                <div class="d-flex justify-content-between">
+                    <form class="form-inline " style={{ 'width': '95%' }}>
+                        <div class="form-group ">
+                            <input type="password" class="form-control" id="inputPassword2" placeholder="Password"></input>
+                        </div>
+                    </form>
+                    <button type="submit" class="btn btn-primary">Go</button>
+                </div>
+                <div>
 
-                    <div>
-                        <Button variant="primary">Go somewhere</Button>
-                    </div>
-                </Card.Body>
-            </Card></>       
+                </div>
+            </>
         )
     }
 }
