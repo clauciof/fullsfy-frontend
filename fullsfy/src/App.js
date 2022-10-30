@@ -3,7 +3,7 @@ import MainComponent from '../../fullsfy/src/components/MainComponent';
 
 function App() {
   return (
-    <MainComponent name="Claucio"></MainComponent>
+    <MainComponent></MainComponent>
   );
 }
 

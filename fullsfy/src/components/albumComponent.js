@@ -22,13 +22,13 @@ class AlbumComponent extends Component {
     render(){
         return (
             <>
-            <div class="d-flex justify-content-between">
-                <form class="form-inline " style={{ 'width': '95%' }}>
-                    <div class="form-group ">
-                        <input type="password" class="form-control" id="inputPassword2" placeholder="Password"></input>
+            <div className="d-flex justify-content-between">
+                <form className="form-inline " style={{ 'width': '95%' }}>
+                    <div className="form-group ">
+                        <input type="password" className="form-control" id="inputPassword2" placeholder="Password"></input>
                     </div>
                 </form>
-                <button type="submit" class="btn btn-primary">Go</button>
+                <button type="submit" className="btn btn-primary">Go</button>
             </div>
             <div>
 
